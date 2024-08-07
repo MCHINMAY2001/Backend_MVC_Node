@@ -115,7 +115,7 @@ app.route("/api/users/:id")
     // const myuser = users.find((user)=>user.id === id);
     // return res.json(myuser);
 })
-.patch((req,res)=>{
+.patch((req,res)=>{ 
 
     return res.json({status:"Pending"});
 })//delete request...
