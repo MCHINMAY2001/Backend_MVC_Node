@@ -115,26 +115,33 @@ app.route("/api/users/:id")
     // const myuser = users.find((user)=>user.id === id);
     // return res.json(myuser);
 })
-.patch((req,res)=>{ 
+.patch(async (req,res)=>{ 
 
-    return res.json({status:"Pending"});
+    await User.findByIdAndUpdate(req.params.id , {lastName:"Changed lastname"});
+    return res.json({status:"Success"});
 })//delete request...
-.delete((req,res)=>{
-    const id = Number(req.params.id);
-    console.log(id);
-    // console.log(users);
-    const myuserIndex = users.findIndex((user)=>user.id===id)
-    console.log(myuserIndex);
-    if(myuserIndex!==0){
-        users.splice(myuserIndex, 1)
-    }
-   fs.writeFile("./MOCK_DATA.json" , JSON.stringify(users), (err,data)=>{
-    if(err){
-        console.log(err);
-        return res.status(500).json({status:"error"});
-    }
-    return res.json({status:"Sucess"});
-   })
+.delete(async(req,res)=>{
+
+     await User.findByIdAndDelete(req.params.id);
+     return res.json({status:"Success"});
+
+
+
+//     const id = Number(req.params.id);
+//     console.log(id);
+//     // console.log(users);
+//     const myuserIndex = users.findIndex((user)=>user.id===id)
+//     console.log(myuserIndex);
+//     if(myuserIndex!==0){
+//         users.splice(myuserIndex, 1)
+//     }
+//    fs.writeFile("./MOCK_DATA.json" , JSON.stringify(users), (err,data)=>{
+//     if(err){
+//         console.log(err);
+//         return res.status(500).json({status:"error"});
+//     }
+//     return res.json({status:"Sucess"});
+//    })
     // return res.json({status:"Pending"});
 })
 

@@ -49,3 +49,10 @@ Time : 1722938772407 From Ip: ::1 Method: POST : From the Path of: /api/users
 Time : 1722938830345 From Ip: ::1 Method: POST : From the Path of: /api/users
 Time : 1722938842109 From Ip: ::1 Method: GET : From the Path of: /api/users/
 Time : 1722938853028 From Ip: ::1 Method: GET : From the Path of: /api/users/66b1f5ce13b2cf37acc6ee73
+Time : 1723016601633 From Ip: ::1 Method: GET : From the Path of: /api/users/66b1f5ce13b2cf37acc6ee73
+Time : 1723017505770 From Ip: ::1 Method: GET : From the Path of: /api/users/66b1f5ce13b2cf37acc6ee73
+Time : 1723017582529 From Ip: ::1 Method: GET : From the Path of: /users
+Time : 1723017583883 From Ip: ::1 Method: GET : From the Path of: /favicon.ico
+Time : 1723019530228 From Ip: ::1 Method: PATCH : From the Path of: /api/users/66b1f5ce13b2cf37acc6ee73
+Time : 1723019558368 From Ip: ::1 Method: PATCH : From the Path of: /api/users/66b1f5ce13b2cf37acc6ee73
+Time : 1723019897057 From Ip: ::1 Method: DELETE : From the Path of: /api/users/66b1f5ce13b2cf37acc6ee73
